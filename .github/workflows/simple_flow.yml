@@ -1,0 +1,9 @@
+name: Trigger a seperate reusable worflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  workflow-contents:
+    name: Some process
+    uses: LabAround-org/ReUsableWorkflows/.github/workflows/required-pass.yml@main
